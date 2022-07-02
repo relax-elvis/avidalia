@@ -1,0 +1,66 @@
+.p_tab
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-wrap: wrap
+	.item 
+		width: calc(50% - 21.5px)
+
+	.item 
+		padding: 0 0 35px 0
+		background-color: transparent
+		border-bottom: 1px solid rgba(0, 0, 0, .25)
+		margin-bottom: 34px
+		outline: none
+		position: relative
+		&:hover 
+			cursor: pointer
+		&:last-child
+			margin-bottom: 0
+		&.active 
+			.tab-title 
+				color: $pale-red
+			.tab-content 
+			 	display: block
+			 	margin-top: 14px
+			 	position: absolute
+			 	z-index: 2
+			 	background-color: #f1f1f1
+			 	padding-bottom: 25px
+			.icon 
+				transform: rotate(180deg)
+	.tab-title
+		font-size: 1.875em
+		font-weight: 500
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.33
+		letter-spacing: normal
+		color: $black
+		text-align: left
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		transition: all 0.3s linear
+		&:hover 
+			color: $pale-red
+		.icon 
+			position: relative
+			right: -5px
+			top: -3px
+		
+	.tab-content
+		display: none
+		p 
+			font-size: 1.25em
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.4
+			letter-spacing: normal
+			color: $light-green
+			strong
+				font-weight: 500
+			&:last-child
+				margin: 0
