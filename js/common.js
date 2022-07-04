@@ -174,6 +174,13 @@ $(document).ready(function() {
 		}
 	});
 
+	if($(window).width() < 991) {
+		$('header .mobile-menu nav .item .link').click(function() {
+			$('header .mobile-menu').removeClass('active');
+			$('header .mobile .btn-menu').removeClass('active');
+		})
+	}
+
 	if($(this).scrollTop() > 100) {
 		$('header').addClass("fixed-menu");
 	}
