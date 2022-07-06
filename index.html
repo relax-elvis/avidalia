@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#fb7a00">
+	<link rel="shortcut icon"  type="image/x-icon" href="favicon.ico">
 	<title>avidalia</title>
 	<meta name="description" content="pluscolor">
 	<link rel="stylesheet" href="css/main.min.css">
@@ -447,15 +448,15 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-md-12 offset-lg-1">
 						<div class="form-block">
-							<div class="title">
-								Rellena el formulario o escríbenos a: info@avidalia.com
-							</div>
 							<form action="" method="POST">
+								<div class="title">
+									Rellena el formulario o escríbenos a: info@avidalia.com
+								</div>
 								<!-- group -->
 								<div class="group">
 									<!-- field -->
 									<div class="field">
-										<label>
+										<label class="error">
 											<div>
 												Nombre *
 											</div>
@@ -465,7 +466,7 @@
 									<!-- /field -->
 									<!-- field -->
 									<div class="field">
-										<label>
+										<label class="error">
 											<div>
 												Email *
 											</div>
@@ -479,7 +480,7 @@
 								<div class="group">
 									<!-- field -->
 									<div class="field">
-										<label>
+										<label class="error">
 											<div>
 												Teléfono *
 											</div>
@@ -508,7 +509,7 @@
 									</label>
 								</div>
 								<div class="field">
-									<label class="check">
+									<label class="check error">
 										<input type="checkbox" name="privacida">
 										<span>
 											He leído y acepto las condiciones de privacidad
@@ -527,6 +528,49 @@
 									<button type="submit" class="btn">ENVIAR</button>
 								</div>
 							</form>
+							<div style="display: none" class="form-success">
+								<svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<filter id="k55qgvreia">
+											<feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
+										</filter>
+									</defs>
+									<g transform="translate(-179)" filter="url(#k55qgvreia)" fill="none" fill-rule="evenodd">
+										<g fill="#FFF">
+											<path d="M223.315 22 208.59 37.426l-7.545-7.791L197 33.797 208.895 46 228 26.944z"/>
+											<path d="M212 3.882c-16.098 0-29.192 13.095-29.192 29.193 0 16.097 13.094 29.192 29.192 29.192s29.192-13.095 29.192-29.192c0-16.098-13.094-29.193-29.192-29.193M212 66c-18.185 0-33-14.815-33-33 0-18.185 14.815-33 33-33 18.185 0 33 14.815 33 33 0 18.185-14.815 33-33 33"/>
+										</g>
+									</g>
+								</svg>
+								<p>
+									<strong>Muchas gracias.
+									En breve nos prondremos<br>
+									en contacto contigo.</strong>
+								</p>
+							</div>
+							<div style="display: none" class="form-error">
+								<svg width="74" height="66" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<filter id="5ag1pyq3ya">
+											<feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
+										</filter>
+									</defs>
+									<g transform="translate(-222)" filter="url(#5ag1pyq3ya)" fill="none" fill-rule="evenodd">
+										<g fill="#FFF">
+											<path d="m294.82 53.025-28.284-48.7C264.963 1.617 262.146 0 259 0s-5.963 1.617-7.536 4.325l-28.284 48.7c-1.573 2.708-1.573 5.942 0 8.65S227.57 66 230.715 66h56.57c3.145 0 5.962-1.617 7.535-4.325 1.573-2.708 1.573-5.942 0-8.65zm-3.754 6.495a4.327 4.327 0 0 1-3.782 2.17h-56.569a4.326 4.326 0 0 1-3.78-2.17 4.274 4.274 0 0 1 0-4.34l28.284-48.7A4.326 4.326 0 0 1 259 4.31c1.578 0 2.992.811 3.781 2.17l28.285 48.7a4.275 4.275 0 0 1 0 4.34z" fill-rule="nonzero"/>
+											<path stroke="#FFF" d="M257 20h4v21h-4z"/>
+											<path d="M259 46c-2.206 0-4 1.794-4 4s1.794 4 4 4c2.205 0 4-1.794 4-4s-1.794-4-4-4z"/>
+										</g>
+									</g>
+								</svg>
+								<p>
+									<strong>Ups algo salió mal.<br>
+									Intentalo de nuevo más tarde.</strong>
+								</p>
+								<div class="block-btn">
+									<a class="btn" href="">Volver a intentar</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-12">
@@ -537,7 +581,7 @@
 								</div>
 								<div class="phone">
 									<a href="tel:934644488"><svg width="47" height="48" viewBox="0 0 47 48" xmlns="http://www.w3.org/2000/svg">
-									    <path d="M16.118 12.055c0-.184-.028-.369-.083-.55a29.981 29.981 0 0 1-1.12-5.41A1.807 1.807 0 0 0 13.107 4.5H5.82c-.517 0-.992.21-1.34.592-.352.385-.519.885-.471 1.408 1.807 19.628 17.364 35.185 36.991 36.992a1.818 1.818 0 0 0 1.41-.47c.38-.35.591-.824.591-1.342v-7.289c0-.926-.686-1.702-1.596-1.805a30.191 30.191 0 0 1-5.41-1.12 1.82 1.82 0 0 0-1.826.44l-4.809 4.81-1.162-.58a37.648 37.648 0 0 1-16.833-16.834l-.578-1.162 4.808-4.81c.341-.34.524-.8.524-1.275M0 6.036A5.528 5.528 0 0 1 5.52.5h7.413a5.506 5.506 0 0 1 5.485 4.883 26.877 26.877 0 0 0 1.003 4.837 5.52 5.52 0 0 1-1.363 5.528l-3.005 3.003a34.64 34.64 0 0 0 13.695 13.695l3.004-3.004a5.518 5.518 0 0 1 5.528-1.362c1.572.48 3.198.818 4.837 1.003A5.505 5.505 0 0 1 47 34.566v7.412a5.528 5.528 0 0 1-1.799 4.077 5.551 5.551 0 0 1-4.243 1.422 44.962 44.962 0 0 1-15.264-4.19 45.312 45.312 0 0 1-12.586-8.896 45.326 45.326 0 0 1-8.895-12.585A45 45 0 0 1 .023 6.542 5.412 5.412 0 0 1 0 6.036" fill="#FFF" fill-rule="evenodd"/>
+										<path d="M16.118 12.055c0-.184-.028-.369-.083-.55a29.981 29.981 0 0 1-1.12-5.41A1.807 1.807 0 0 0 13.107 4.5H5.82c-.517 0-.992.21-1.34.592-.352.385-.519.885-.471 1.408 1.807 19.628 17.364 35.185 36.991 36.992a1.818 1.818 0 0 0 1.41-.47c.38-.35.591-.824.591-1.342v-7.289c0-.926-.686-1.702-1.596-1.805a30.191 30.191 0 0 1-5.41-1.12 1.82 1.82 0 0 0-1.826.44l-4.809 4.81-1.162-.58a37.648 37.648 0 0 1-16.833-16.834l-.578-1.162 4.808-4.81c.341-.34.524-.8.524-1.275M0 6.036A5.528 5.528 0 0 1 5.52.5h7.413a5.506 5.506 0 0 1 5.485 4.883 26.877 26.877 0 0 0 1.003 4.837 5.52 5.52 0 0 1-1.363 5.528l-3.005 3.003a34.64 34.64 0 0 0 13.695 13.695l3.004-3.004a5.518 5.518 0 0 1 5.528-1.362c1.572.48 3.198.818 4.837 1.003A5.505 5.505 0 0 1 47 34.566v7.412a5.528 5.528 0 0 1-1.799 4.077 5.551 5.551 0 0 1-4.243 1.422 44.962 44.962 0 0 1-15.264-4.19 45.312 45.312 0 0 1-12.586-8.896 45.326 45.326 0 0 1-8.895-12.585A45 45 0 0 1 .023 6.542 5.412 5.412 0 0 1 0 6.036" fill="#FFF" fill-rule="evenodd"/>
 									</svg>93 464 44 88</a>
 								</div>
 							</div>
