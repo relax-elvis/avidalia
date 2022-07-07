@@ -285,6 +285,16 @@ $(document).ready(function() {
 		}
 	});
 
+
+	$('form input, form textarea').on('input', function(e) {
+		if($(this).val().length !== 0) {
+			$(this).addClass('not-empty');
+		} else if($(this).val().length == 0) {
+
+			$(this).removeClass('not-empty');
+		}
+	});
+
 	lightGallery(document.querySelector('.ow_map .map'), {
 		thumbnail: true,
 	});
@@ -340,5 +350,6 @@ $(document).ready(function() {
 			document.querySelector('.lg-has-thumb .lg-toolbar + .lg-components').style.top = parseInt(imagesTop + imagesHeight + 60) + 'px';
 		}, 500);
 	})
+
 
 });
