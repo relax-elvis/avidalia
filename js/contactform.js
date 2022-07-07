@@ -17,7 +17,7 @@ $("#form form").validate({
 			required: true
 		}
 	},
-	messages: {
+	messages: {	
 		name: "Introduzca su nombre",
 		phone: "Introduza un teléfono",
 		email: "Introduzca un E-mail"
@@ -56,7 +56,6 @@ $('#form form').submit(function(e){
 						$('#form form').hide();
 						$('.p_contact .form-error').hide();
 						$('.p_contact .form-success').show();
-
 
 					} else {
 						

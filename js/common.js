@@ -233,7 +233,7 @@ $(document).ready(function() {
 
 
 
-	$('header nav a[href^="#"], .block-btn .btn, .go-form').click(function(e) {
+	$('header nav a[href^="#"], .go-form').click(function(e) {
 		e.preventDefault();
 		var __this;
 		if($(this)[0].nodeName == 'BUTTON') {
