@@ -295,61 +295,61 @@ $(document).ready(function() {
 		}
 	});
 
-	lightGallery(document.querySelector('.ow_map .map'), {
-		thumbnail: true,
-	});
+	// lightGallery(document.querySelector('.ow_map .map'), {
+	// 	thumbnail: true,
+	// });
 
-	$('.ow_photo__slider').slick({
-		dots: true,
-		infinite: false,
-		speed: 300,
-		slidesToShow: 1,
-		centerMode: false,
-		variableWidth: true,
-		centerPadding: '13px',
-		responsive: [
-			{
-				breakpoint: 1520,
-				settings: {
-					slidesToShow: 3,
-					controls: true
-				}
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-				}
-			}
-		]
-	});
+	// $('.ow_photo__slider').slick({
+	// 	dots: true,
+	// 	infinite: false,
+	// 	speed: 300,
+	// 	slidesToShow: 1,
+	// 	centerMode: false,
+	// 	variableWidth: true,
+	// 	centerPadding: '13px',
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 1520,
+	// 			settings: {
+	// 				slidesToShow: 3,
+	// 				controls: true
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 1024,
+	// 			settings: {
+	// 				slidesToShow: 3,
+	// 			}
+	// 		}
+	// 	]
+	// });
 
-	const list = $('.ow_photo__slider .link-thumb');
-	for(let i = 0; i < list.length; i++) {
-		let item = list[i];
-		$(list[i]).parents('a').attr('href', $(list[i]).attr('href'));
-	}
+	// const list = $('.ow_photo__slider .link-thumb');
+	// for(let i = 0; i < list.length; i++) {
+	// 	let item = list[i];
+	// 	$(list[i]).parents('a').attr('href', $(list[i]).attr('href'));
+	// }
 
-	lightGallery(document.querySelector('.ow_photo__slider .slick-track'), {
-		thumbnail: true,
-		download: false,
-		closable: true,
-		plugins: [lgZoom, lgThumbnail],
-		mobileSettings: {
-			controls: false,
-			showCloseIcon: true,
-			download: false,
-		},
-	});
+	// lightGallery(document.querySelector('.ow_photo__slider .slick-track'), {
+	// 	thumbnail: true,
+	// 	download: false,
+	// 	closable: true,
+	// 	plugins: [lgZoom, lgThumbnail],
+	// 	mobileSettings: {
+	// 		controls: false,
+	// 		showCloseIcon: true,
+	// 		download: false,
+	// 	},
+	// });
 
-	document.querySelector('.ow_photo__slider .slick-track').addEventListener('click', function(){ 
-		setTimeout(function() {
-			const images = document.querySelector('.lg-outer.lg-grab .lg-current img');
-			const imagesTop = images.offsetTop;
-			const imagesHeight = images.offsetHeight;
-			document.querySelector('.lg-has-thumb .lg-toolbar + .lg-components').style.top = parseInt(imagesTop + imagesHeight + 60) + 'px';
-		}, 500);
-	})
+	// document.querySelector('.ow_photo__slider .slick-track').addEventListener('click', function(){ 
+	// 	setTimeout(function() {
+	// 		const images = document.querySelector('.lg-outer.lg-grab .lg-current img');
+	// 		const imagesTop = images.offsetTop;
+	// 		const imagesHeight = images.offsetHeight;
+	// 		document.querySelector('.lg-has-thumb .lg-toolbar + .lg-components').style.top = parseInt(imagesTop + imagesHeight + 60) + 'px';
+	// 	}, 500);
+	// })
 
 
 });
